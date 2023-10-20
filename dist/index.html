@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/82e195582f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Cadastro de Alunos</h1>
+    <div class="container">
+        <form  class="cadastrar">
+            <div>
+                <label for="nome">Nome</label><br>
+                <input id="nome" type="text">
+            </div>
+            <div>
+                <label for="idade">Idade</label><br>
+                <input id="idade" type="number">
+            </div>
+
+            <div>
+                <label for="serie">Período</label><br>
+                <select id="serie">
+                    <option value="">Selecionar</option>
+                    <option value=" Colegial">Colegial</option>
+                    <option value="Fundamental II">Fundamental II</option>
+                    <option value="Fundamental I">Fundamental I</option>
+                </select>
+            </div>
+            <div>
+                <label for="ra">RA</label><br>
+                <input id="ra" type="number">
+            </div>
+            <div class="containerEmail">
+                <label for="email">Email</label><br>
+                <input id="email" type="email">
+            </div>
+
+
+            <button type="submit" class="btnCadastrar">Cadastrar</button>
+        </form>
+    </div>
+
+    <div class="containerBtn">
+        <button class="mostraCadastros">Mostrar Cadastros</button>
+    </div>
+
+    <div class="closeModal">
+        <div>
+            <header class="cabecalho">
+                <button class="fecharModal"><i class="fa-solid fa-arrow-left"></i>voltar</button> 
+                <h2>Cadastrados</h2>
+                
+            </header>
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Período</th>
+                        <th>RA</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
